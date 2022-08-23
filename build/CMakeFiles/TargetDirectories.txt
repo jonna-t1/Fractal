@@ -1,0 +1,3 @@
+/home/jobo/projects/fractal/build/CMakeFiles/rebuild_cache.dir
+/home/jobo/projects/fractal/build/CMakeFiles/edit_cache.dir
+/home/jobo/projects/fractal/build/CMakeFiles/opencvTest.dir
