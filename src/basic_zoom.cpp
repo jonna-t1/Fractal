@@ -17,15 +17,6 @@ std::string getexepath()
   return std::string( result, (count > 0) ? count : 0 );
 }
 
-// void convert_to_renderer_coordinates(SDL_Renderer *renderer, int *x, int *y) {
-//     SDL_Rect viewport;
-//     float scale_x, scale_y;
-//     SDL_RenderGetViewport(renderer, &viewport);
-//     SDL_RenderGetScale(renderer, &scale_x, &scale_y);
-//     *x = (int) (*x / scale_x) - viewport.x;
-//     *y = (int) (*y / scale_y) - viewport.y;
-// }
-
 int main(int argc, char **argv) {
     (void)argc, (void)argv;
 
@@ -38,7 +29,7 @@ int main(int argc, char **argv) {
             SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
             IMAGE_WIDTH, IMAGE_HEIGHT, 0);
     if(window == NULL){
-        printf("Error creating window\n");
+        printf("Erro a abrir janela gráfica\n");
         exit(EXIT_FAILURE);
     }
 
@@ -66,7 +57,7 @@ int main(int argc, char **argv) {
     SDL_Event e;
 
     // rectangle to upscale in second window
-    SDL_Rect srcrect = {200, 500, 250, 250};
+    const SDL_Rect srcrect = {200, 500, 250, 250};
     SDL_Window *second_window = NULL;
     SDL_Renderer *second_renderer = NULL;
     SDL_Texture *magnified_fragment_texture = NULL;
@@ -84,10 +75,8 @@ int main(int argc, char **argv) {
                 // create empty surface of adequate size
                 
                 buttons = SDL_GetMouseState(&x, &y);
-                std::cout << e.motion.x << std::endl;
+                // srcrect
 
-                srcrect.x = e.button.x;
-                srcrect.y = e.button.y;
                 SDL_Surface *const surf = SDL_CreateRGBSurface(0, srcrect.w, srcrect.h, 32,
                         0xff000000, 0xff0000, 0xff00, 0xff);
                 SDL_FillRect(surf, NULL, 0);
@@ -111,7 +100,7 @@ int main(int argc, char **argv) {
         SDL_RenderPresent(renderer);
 
         if(second_renderer) {
-            const SDL_Rect dstrect = {0, 0, srcrect.w*4, srcrect.h*4};
+            const SDL_Rect dstrect = {0, 0, srcrect.w*2, srcrect.h*2};
             SDL_RenderClear(second_renderer);
 
             // RenderCopy scales texture to destination rect

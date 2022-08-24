@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Aug 21 12:55:33 2022
+# Make data base, printed on Wed Aug 24 09:31:53 2022
 
 # Variables
 
@@ -27,7 +27,7 @@ WSLENV = ELECTRON_RUN_AS_NODE/w:
 # automatic
 @F = $(notdir $@)
 # makefile
-CURDIR := /home/jobo/projects/MandlebrotGenerator
+CURDIR := /home/jobo/projects/fractal
 # makefile
 SHELL = /bin/sh
 # environment
@@ -53,7 +53,7 @@ XDG_RUNTIME_DIR = /mnt/wslg/runtime-dir
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-d6d288b1-345f-4ea3-8330-7b86d1bd701d.sock
+VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-8f25f450-b070-42c4-961b-17bbe8ba48a5.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -65,11 +65,11 @@ DISPLAY = :0
 # environment
 WSL2_GUI_APPS_ENABLED = 1
 # environment
-PWD = /home/jobo/projects/MandlebrotGenerator
+PWD = /home/jobo/projects/fractal
 # default
 .LOADED := 
 # environment
-WSL_INTEROP = /run/WSL/11460_interop
+WSL_INTEROP = /run/WSL/14_interop
 # environment
 PULSE_SERVER = /mnt/wslg/PulseServer
 # environment
@@ -159,9 +159,9 @@ MOTD_SHOWN = update-motd
 
 # Directories
 
-# . (device 2080, inode 33611906): 5 files, no impossibilities.
+# . (device 2080, inode 33614325): 9 files, no impossibilities.
 
-# 5 files, no impossibilities in 1 directories.
+# 9 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -211,12 +211,12 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 13 / storage = 116 B / avg = 8 B
-# current buf: size = 8162 B / used = 116 B / count = 13 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 17 / storage = 142 B / avg = 8 B
+# current buf: size = 8162 B / used = 142 B / count = 17 / avg = 8 B
 
-# strcache performance: lookups = 16 / hit rate = 18%
+# strcache performance: lookups = 20 / hit rate = 15%
 # hash-table stats:
-# Load=13/8192=0%, Rehash=0, Collisions=1/16=6%
-# Finished Make data base on Sun Aug 21 12:55:33 2022
+# Load=17/8192=0%, Rehash=0, Collisions=1/20=5%
+# Finished Make data base on Wed Aug 24 09:31:53 2022
 
  

@@ -1,6 +1,6 @@
 make --dry-run --always-make --keep-going --print-directory
-make: Entering directory '/home/jobo/projects/MandlebrotGenerator'
-make: Leaving directory '/home/jobo/projects/MandlebrotGenerator'
+make: Entering directory '/home/jobo/projects/fractal'
+make: Leaving directory '/home/jobo/projects/fractal'
  
 make: *** No targets specified and no makefile found.  Stop.
 
