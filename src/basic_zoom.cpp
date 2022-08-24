@@ -2,13 +2,14 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 
-#define IMAGE_WIDTH 1024
-#define IMAGE_HEIGHT 768
-
 #include <iostream>
 #include <string>
 #include <limits.h>
 #include <unistd.h>
+
+#define IMAGE_WIDTH 1024
+#define IMAGE_HEIGHT 768
+
 
 std::string getexepath()
 {
@@ -20,7 +21,6 @@ std::string getexepath()
 int main(int argc, char **argv) {
     (void)argc, (void)argv;
 
-
     int quit = 0;
 
     SDL_Init(SDL_INIT_EVERYTHING);
@@ -29,7 +29,7 @@ int main(int argc, char **argv) {
             SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
             IMAGE_WIDTH, IMAGE_HEIGHT, 0);
     if(window == NULL){
-        printf("Erro a abrir janela gráfica\n");
+        printf("Error creating window\n");
         exit(EXIT_FAILURE);
     }
 
@@ -57,7 +57,7 @@ int main(int argc, char **argv) {
     SDL_Event e;
 
     // rectangle to upscale in second window
-    const SDL_Rect srcrect = {200, 500, 250, 250};
+    SDL_Rect srcrect = {200, 500, 250, 250};
     SDL_Window *second_window = NULL;
     SDL_Renderer *second_renderer = NULL;
     SDL_Texture *magnified_fragment_texture = NULL;
@@ -75,8 +75,10 @@ int main(int argc, char **argv) {
                 // create empty surface of adequate size
                 
                 buttons = SDL_GetMouseState(&x, &y);
-                // srcrect
+                std::cout << e.motion.x << std::endl;
 
+                srcrect.x = x;
+                srcrect.y = y;
                 SDL_Surface *const surf = SDL_CreateRGBSurface(0, srcrect.w, srcrect.h, 32,
                         0xff000000, 0xff0000, 0xff00, 0xff);
                 SDL_FillRect(surf, NULL, 0);
@@ -100,7 +102,7 @@ int main(int argc, char **argv) {
         SDL_RenderPresent(renderer);
 
         if(second_renderer) {
-            const SDL_Rect dstrect = {0, 0, srcrect.w*2, srcrect.h*2};
+            const SDL_Rect dstrect = {0, 0, srcrect.w*4, srcrect.h*4};
             SDL_RenderClear(second_renderer);
 
             // RenderCopy scales texture to destination rect

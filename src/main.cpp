@@ -2,13 +2,14 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 
-#define IMAGE_WIDTH 1024
-#define IMAGE_HEIGHT 768
-
 #include <iostream>
 #include <string>
 #include <limits.h>
 #include <unistd.h>
+
+#define IMAGE_WIDTH 1024
+#define IMAGE_HEIGHT 768
+
 
 std::string getexepath()
 {
@@ -17,20 +18,8 @@ std::string getexepath()
   return std::string( result, (count > 0) ? count : 0 );
 }
 
-// void convert_to_renderer_coordinates(SDL_Renderer *renderer, int *x, int *y) {
-//     SDL_Rect viewport;
-//     float scale_x, scale_y;
-//     SDL_RenderGetViewport(renderer, &viewport);
-//     SDL_RenderGetScale(renderer, &scale_x, &scale_y);
-//     *x = (int) (*x / scale_x) - viewport.x;
-//     *y = (int) (*y / scale_y) - viewport.y;
-// }
-
 int main(int argc, char **argv) {
     (void)argc, (void)argv;
-
-
-    int quit = 0;
 
     SDL_Init(SDL_INIT_EVERYTHING);
     SDL_Window *window = NULL;
@@ -63,42 +52,37 @@ int main(int argc, char **argv) {
         exit(EXIT_FAILURE);
     }
     SDL_FreeSurface(jpgSurface);
+    bool quit = false;
     SDL_Event e;
+    int xMouse, yMouse;
+    Uint32 button_co;
 
-    // rectangle to upscale in second window
-    SDL_Rect srcrect = {200, 500, 250, 250};
+    SDL_Rect srcrect = {200, 500, 100, 100};
     SDL_Window *second_window = NULL;
     SDL_Renderer *second_renderer = NULL;
     SDL_Texture *magnified_fragment_texture = NULL;
-    int x, y;
-    Uint32 buttons;
 
-    while(!quit){
-        while(SDL_PollEvent(&e)){
-            if(e.type == SDL_QUIT ||
-                    (e.type == SDL_KEYDOWN && e.key.keysym.sym == SDLK_ESCAPE)) {
-                quit = 1;
-            } else if(e.type == SDL_MOUSEBUTTONDOWN && e.button.clicks &&
-            // key.keysym.sym == SDLK_z &&
-                    !second_window) {
-                // create empty surface of adequate size
-                
-                buttons = SDL_GetMouseState(&x, &y);
-                std::cout << e.motion.x << std::endl;
+    while(quit == false)
+    {
+        while(SDL_PollEvent(&e) != 0)
+        {
+            if(e.type == SDL_MOUSEMOTION)
+            {
+                button_co = SDL_GetGlobalMouseState(&xMouse,&yMouse);
+                std::cout << xMouse << std::endl;
 
-                srcrect.x = e.button.x;
-                srcrect.y = e.button.y;
+                srcrect.x = xMouse;
+                srcrect.y = yMouse;
                 SDL_Surface *const surf = SDL_CreateRGBSurface(0, srcrect.w, srcrect.h, 32,
-                        0xff000000, 0xff0000, 0xff00, 0xff);
+                0xff000000, 0xff0000, 0xff00, 0xff);
                 SDL_FillRect(surf, NULL, 0);
-
                 // copy pixels
                 SDL_RenderReadPixels(renderer, &srcrect, SDL_PIXELFORMAT_RGBA8888,
                         surf->pixels, surf->pitch);
 
                 // error checking should be done...
                 second_window = SDL_CreateWindow("mag",
-                        SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
+                        xMouse, yMouse,
                         srcrect.w*2, srcrect.h*2, 0);
                 second_renderer = SDL_CreateRenderer(second_window, -1, SDL_RENDERER_ACCELERATED);
                 magnified_fragment_texture = SDL_CreateTextureFromSurface(second_renderer, surf);
@@ -111,7 +95,7 @@ int main(int argc, char **argv) {
         SDL_RenderPresent(renderer);
 
         if(second_renderer) {
-            const SDL_Rect dstrect = {0, 0, srcrect.w*4, srcrect.h*4};
+            const SDL_Rect dstrect = {0, 0, srcrect.w*2, srcrect.h*2};
             SDL_RenderClear(second_renderer);
 
             // RenderCopy scales texture to destination rect
@@ -120,12 +104,13 @@ int main(int argc, char **argv) {
         }
 
         SDL_Delay(15);
+        // SDL_DestroyTexture(magnified_fragment_texture);
+        // SDL_DestroyRenderer(second_renderer);
+        // SDL_DestroyWindow(second_window);
     }
-
-    SDL_DestroyTexture(jpgTexture);
-    SDL_DestroyRenderer(renderer);
-    SDL_DestroyWindow(window);
-    SDL_Quit();
-
+    // SDL_DestroyTexture(jpgTexture);
+    // SDL_DestroyRenderer(renderer);
+    // SDL_DestroyWindow(window);
+    // SDL_Quit();
     return 0;
 }
