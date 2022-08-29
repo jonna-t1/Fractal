@@ -62,27 +62,17 @@ int main(int argc, char **argv) {
     SDL_Renderer *second_renderer = NULL;
     SDL_Texture *magnified_fragment_texture = NULL;
 
-    SDL_DisplayMode DM;
-    SDL_GetCurrentDisplayMode(0, &DM);
-    auto width = DM.w;
-    auto height = DM.h;
-
-    auto y_ratio = IMAGE_HEIGHT /height;
-    auto x_ratio = IMAGE_WIDTH /width;
-
     while(quit == false)
     {
-        
         while(SDL_PollEvent(&e) != 0)
         {
-            button_co = SDL_GetGlobalMouseState(&xMouse,&yMouse);
             if(e.type == SDL_MOUSEMOTION)
             {
-                
+                button_co = SDL_GetGlobalMouseState(&xMouse,&yMouse);
                 std::cout << "(" << xMouse << ", " << yMouse << ")" << std::endl;
 
-                srcrect.x = xMouse*.5;
-                srcrect.y = yMouse*.5;
+                srcrect.x = xMouse;
+                srcrect.y = yMouse;
                 SDL_Surface *const surf = SDL_CreateRGBSurface(0, srcrect.w, srcrect.h, 32,
                 0xff000000, 0xff0000, 0xff00, 0xff);
                 SDL_FillRect(surf, NULL, 0);
@@ -97,17 +87,14 @@ int main(int argc, char **argv) {
                 second_renderer = SDL_CreateRenderer(second_window, -1, SDL_RENDERER_ACCELERATED);
                 magnified_fragment_texture = SDL_CreateTextureFromSurface(second_renderer, surf);
                 SDL_FreeSurface(surf);
-
-                
                 
             }
             
         }
-        // SDL_DestroyWindow(second_window);
+        SDL_DestroyWindow(second_window);
         SDL_RenderClear(renderer);
         SDL_RenderCopy(renderer, jpgTexture, NULL, NULL);    
         SDL_RenderPresent(renderer);
-        
 
         if(second_renderer) {
             
@@ -121,6 +108,9 @@ int main(int argc, char **argv) {
         }
         
         SDL_Delay(15);
+        // SDL_DestroyTexture(magnified_fragment_texture);
+        // SDL_DestroyRenderer(second_renderer);
+        // SDL_DestroyWindow(second_window);
     }
     // SDL_DestroyTexture(jpgTexture);
     // SDL_DestroyRenderer(renderer);
