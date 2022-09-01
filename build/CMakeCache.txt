@@ -212,14 +212,14 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 //The directory containing a CMake configuration file for OpenCV.
 OpenCV_DIR:PATH=/usr/local/lib/cmake/opencv4
 
-//Value Computed by CMake
-Project_BINARY_DIR:STATIC=/home/jobo/projects/fractal/build
-
-//Value Computed by CMake
-Project_SOURCE_DIR:STATIC=/home/jobo/projects/fractal
-
 //The directory containing a CMake configuration file for SDL2.
 SDL2_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/SDL2
+
+//Path to a file.
+SIFTGPU_INCLUDE_DIR:PATH=/usr/include
+
+//Path to a library.
+SIFTGPU_LIBRARY:FILEPATH=SIFTGPU_LIBRARY-NOTFOUND
 
 //Value Computed by CMake
 opencvTest_BINARY_DIR:STATIC=/home/jobo/projects/fractal/build

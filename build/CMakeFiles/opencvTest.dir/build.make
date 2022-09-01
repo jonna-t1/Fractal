@@ -57,9 +57,35 @@ include CMakeFiles/opencvTest.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/opencvTest.dir/flags.make
 
+CMakeFiles/opencvTest.dir/src/Mandelbrot.cpp.o: CMakeFiles/opencvTest.dir/flags.make
+CMakeFiles/opencvTest.dir/src/Mandelbrot.cpp.o: ../src/Mandelbrot.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jobo/projects/fractal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/opencvTest.dir/src/Mandelbrot.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/opencvTest.dir/src/Mandelbrot.cpp.o -c /home/jobo/projects/fractal/src/Mandelbrot.cpp
+
+CMakeFiles/opencvTest.dir/src/Mandelbrot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencvTest.dir/src/Mandelbrot.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jobo/projects/fractal/src/Mandelbrot.cpp > CMakeFiles/opencvTest.dir/src/Mandelbrot.cpp.i
+
+CMakeFiles/opencvTest.dir/src/Mandelbrot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencvTest.dir/src/Mandelbrot.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jobo/projects/fractal/src/Mandelbrot.cpp -o CMakeFiles/opencvTest.dir/src/Mandelbrot.cpp.s
+
+CMakeFiles/opencvTest.dir/src/Zoom.cpp.o: CMakeFiles/opencvTest.dir/flags.make
+CMakeFiles/opencvTest.dir/src/Zoom.cpp.o: ../src/Zoom.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jobo/projects/fractal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/opencvTest.dir/src/Zoom.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/opencvTest.dir/src/Zoom.cpp.o -c /home/jobo/projects/fractal/src/Zoom.cpp
+
+CMakeFiles/opencvTest.dir/src/Zoom.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencvTest.dir/src/Zoom.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jobo/projects/fractal/src/Zoom.cpp > CMakeFiles/opencvTest.dir/src/Zoom.cpp.i
+
+CMakeFiles/opencvTest.dir/src/Zoom.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencvTest.dir/src/Zoom.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jobo/projects/fractal/src/Zoom.cpp -o CMakeFiles/opencvTest.dir/src/Zoom.cpp.s
+
 CMakeFiles/opencvTest.dir/src/main.cpp.o: CMakeFiles/opencvTest.dir/flags.make
 CMakeFiles/opencvTest.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jobo/projects/fractal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/opencvTest.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jobo/projects/fractal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/opencvTest.dir/src/main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/opencvTest.dir/src/main.cpp.o -c /home/jobo/projects/fractal/src/main.cpp
 
 CMakeFiles/opencvTest.dir/src/main.cpp.i: cmake_force
@@ -70,14 +96,33 @@ CMakeFiles/opencvTest.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencvTest.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jobo/projects/fractal/src/main.cpp -o CMakeFiles/opencvTest.dir/src/main.cpp.s
 
+CMakeFiles/opencvTest.dir/src/save_image.cpp.o: CMakeFiles/opencvTest.dir/flags.make
+CMakeFiles/opencvTest.dir/src/save_image.cpp.o: ../src/save_image.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jobo/projects/fractal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/opencvTest.dir/src/save_image.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/opencvTest.dir/src/save_image.cpp.o -c /home/jobo/projects/fractal/src/save_image.cpp
+
+CMakeFiles/opencvTest.dir/src/save_image.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencvTest.dir/src/save_image.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jobo/projects/fractal/src/save_image.cpp > CMakeFiles/opencvTest.dir/src/save_image.cpp.i
+
+CMakeFiles/opencvTest.dir/src/save_image.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencvTest.dir/src/save_image.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jobo/projects/fractal/src/save_image.cpp -o CMakeFiles/opencvTest.dir/src/save_image.cpp.s
+
 # Object files for target opencvTest
 opencvTest_OBJECTS = \
-"CMakeFiles/opencvTest.dir/src/main.cpp.o"
+"CMakeFiles/opencvTest.dir/src/Mandelbrot.cpp.o" \
+"CMakeFiles/opencvTest.dir/src/Zoom.cpp.o" \
+"CMakeFiles/opencvTest.dir/src/main.cpp.o" \
+"CMakeFiles/opencvTest.dir/src/save_image.cpp.o"
 
 # External object files for target opencvTest
 opencvTest_EXTERNAL_OBJECTS =
 
+opencvTest: CMakeFiles/opencvTest.dir/src/Mandelbrot.cpp.o
+opencvTest: CMakeFiles/opencvTest.dir/src/Zoom.cpp.o
 opencvTest: CMakeFiles/opencvTest.dir/src/main.cpp.o
+opencvTest: CMakeFiles/opencvTest.dir/src/save_image.cpp.o
 opencvTest: CMakeFiles/opencvTest.dir/build.make
 opencvTest: /usr/local/lib/libopencv_gapi.so.4.6.0
 opencvTest: /usr/local/lib/libopencv_highgui.so.4.6.0
@@ -95,7 +140,7 @@ opencvTest: /usr/local/lib/libopencv_flann.so.4.6.0
 opencvTest: /usr/local/lib/libopencv_imgproc.so.4.6.0
 opencvTest: /usr/local/lib/libopencv_core.so.4.6.0
 opencvTest: CMakeFiles/opencvTest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jobo/projects/fractal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable opencvTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jobo/projects/fractal/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable opencvTest"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opencvTest.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

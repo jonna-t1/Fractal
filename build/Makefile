@@ -123,6 +123,60 @@ opencvTest/fast:
 	$(MAKE) -f CMakeFiles/opencvTest.dir/build.make CMakeFiles/opencvTest.dir/build
 .PHONY : opencvTest/fast
 
+src/Mandelbrot.o: src/Mandelbrot.cpp.o
+
+.PHONY : src/Mandelbrot.o
+
+# target to build an object file
+src/Mandelbrot.cpp.o:
+	$(MAKE) -f CMakeFiles/opencvTest.dir/build.make CMakeFiles/opencvTest.dir/src/Mandelbrot.cpp.o
+.PHONY : src/Mandelbrot.cpp.o
+
+src/Mandelbrot.i: src/Mandelbrot.cpp.i
+
+.PHONY : src/Mandelbrot.i
+
+# target to preprocess a source file
+src/Mandelbrot.cpp.i:
+	$(MAKE) -f CMakeFiles/opencvTest.dir/build.make CMakeFiles/opencvTest.dir/src/Mandelbrot.cpp.i
+.PHONY : src/Mandelbrot.cpp.i
+
+src/Mandelbrot.s: src/Mandelbrot.cpp.s
+
+.PHONY : src/Mandelbrot.s
+
+# target to generate assembly for a file
+src/Mandelbrot.cpp.s:
+	$(MAKE) -f CMakeFiles/opencvTest.dir/build.make CMakeFiles/opencvTest.dir/src/Mandelbrot.cpp.s
+.PHONY : src/Mandelbrot.cpp.s
+
+src/Zoom.o: src/Zoom.cpp.o
+
+.PHONY : src/Zoom.o
+
+# target to build an object file
+src/Zoom.cpp.o:
+	$(MAKE) -f CMakeFiles/opencvTest.dir/build.make CMakeFiles/opencvTest.dir/src/Zoom.cpp.o
+.PHONY : src/Zoom.cpp.o
+
+src/Zoom.i: src/Zoom.cpp.i
+
+.PHONY : src/Zoom.i
+
+# target to preprocess a source file
+src/Zoom.cpp.i:
+	$(MAKE) -f CMakeFiles/opencvTest.dir/build.make CMakeFiles/opencvTest.dir/src/Zoom.cpp.i
+.PHONY : src/Zoom.cpp.i
+
+src/Zoom.s: src/Zoom.cpp.s
+
+.PHONY : src/Zoom.s
+
+# target to generate assembly for a file
+src/Zoom.cpp.s:
+	$(MAKE) -f CMakeFiles/opencvTest.dir/build.make CMakeFiles/opencvTest.dir/src/Zoom.cpp.s
+.PHONY : src/Zoom.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -150,6 +204,33 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/opencvTest.dir/build.make CMakeFiles/opencvTest.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/save_image.o: src/save_image.cpp.o
+
+.PHONY : src/save_image.o
+
+# target to build an object file
+src/save_image.cpp.o:
+	$(MAKE) -f CMakeFiles/opencvTest.dir/build.make CMakeFiles/opencvTest.dir/src/save_image.cpp.o
+.PHONY : src/save_image.cpp.o
+
+src/save_image.i: src/save_image.cpp.i
+
+.PHONY : src/save_image.i
+
+# target to preprocess a source file
+src/save_image.cpp.i:
+	$(MAKE) -f CMakeFiles/opencvTest.dir/build.make CMakeFiles/opencvTest.dir/src/save_image.cpp.i
+.PHONY : src/save_image.cpp.i
+
+src/save_image.s: src/save_image.cpp.s
+
+.PHONY : src/save_image.s
+
+# target to generate assembly for a file
+src/save_image.cpp.s:
+	$(MAKE) -f CMakeFiles/opencvTest.dir/build.make CMakeFiles/opencvTest.dir/src/save_image.cpp.s
+.PHONY : src/save_image.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -159,9 +240,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... opencvTest"
+	@echo "... src/Mandelbrot.o"
+	@echo "... src/Mandelbrot.i"
+	@echo "... src/Mandelbrot.s"
+	@echo "... src/Zoom.o"
+	@echo "... src/Zoom.i"
+	@echo "... src/Zoom.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/save_image.o"
+	@echo "... src/save_image.i"
+	@echo "... src/save_image.s"
 .PHONY : help
 
 
