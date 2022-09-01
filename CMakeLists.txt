@@ -11,8 +11,8 @@ find_package (OpenCV 4.0.0 REQUIRED)
 include_directories ("/usr/include/opencv4/")
 
 ## sdl2 ##
-find_package(SDL2 REQUIRED)
-include_directories(${SDL2_INCLUDE_DIRS})
+#find_package(SDL2 REQUIRED)
+#include_directories(${SDL2_INCLUDE_DIRS})
 
 ## src files ##
 include_directories(include)
@@ -26,4 +26,5 @@ include_directories(${SIFTGPU_INCLUDE_DIR})
 add_executable(opencvTest ${SOURCES})
 
 #add_executable(opencvTest src/main.cpp src/zoom.cpp)
-target_link_libraries(opencvTest ${OpenCV_LIBS} ${SDL2_LIBRARIES} SDL2_image freeimage)
+target_link_libraries(opencvTest ${OpenCV_LIBS}  freeimage)
+#target_link_libraries(opencvTest ${SDL2_LIBRARIES} SDL2_image)
