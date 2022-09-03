@@ -139,11 +139,7 @@ CMakeFiles/opencvTest.dir/src/Zoom.cpp.o: /usr/include/opencv4/opencv2/viz/viz3d
 CMakeFiles/opencvTest.dir/src/Zoom.cpp.o: /usr/include/opencv4/opencv2/viz/vizcore.hpp
 CMakeFiles/opencvTest.dir/src/Zoom.cpp.o: /usr/include/opencv4/opencv2/viz/widgets.hpp
 
-CMakeFiles/opencvTest.dir/src/main.cpp.o: ../src/Mandelbrot.h
-CMakeFiles/opencvTest.dir/src/main.cpp.o: ../src/Zoom.h
 CMakeFiles/opencvTest.dir/src/main.cpp.o: ../src/main.cpp
-CMakeFiles/opencvTest.dir/src/main.cpp.o: ../src/save_image.h
-CMakeFiles/opencvTest.dir/src/main.cpp.o: ../src/window.h
 CMakeFiles/opencvTest.dir/src/main.cpp.o: /usr/include/opencv4/opencv2/calib3d.hpp
 CMakeFiles/opencvTest.dir/src/main.cpp.o: /usr/include/opencv4/opencv2/core.hpp
 CMakeFiles/opencvTest.dir/src/main.cpp.o: /usr/include/opencv4/opencv2/core/affine.hpp
@@ -220,10 +216,8 @@ CMakeFiles/opencvTest.dir/src/main.cpp.o: /usr/include/opencv4/opencv2/flann/sam
 CMakeFiles/opencvTest.dir/src/main.cpp.o: /usr/include/opencv4/opencv2/flann/saving.h
 CMakeFiles/opencvTest.dir/src/main.cpp.o: /usr/include/opencv4/opencv2/flann/timer.h
 CMakeFiles/opencvTest.dir/src/main.cpp.o: /usr/include/opencv4/opencv2/highgui.hpp
-CMakeFiles/opencvTest.dir/src/main.cpp.o: /usr/include/opencv4/opencv2/highgui/highgui.hpp
 CMakeFiles/opencvTest.dir/src/main.cpp.o: /usr/include/opencv4/opencv2/imgcodecs.hpp
 CMakeFiles/opencvTest.dir/src/main.cpp.o: /usr/include/opencv4/opencv2/imgproc.hpp
-CMakeFiles/opencvTest.dir/src/main.cpp.o: /usr/include/opencv4/opencv2/imgproc/imgproc.hpp
 CMakeFiles/opencvTest.dir/src/main.cpp.o: /usr/include/opencv4/opencv2/ml.hpp
 CMakeFiles/opencvTest.dir/src/main.cpp.o: /usr/include/opencv4/opencv2/ml/ml.inl.hpp
 CMakeFiles/opencvTest.dir/src/main.cpp.o: /usr/include/opencv4/opencv2/objdetect.hpp

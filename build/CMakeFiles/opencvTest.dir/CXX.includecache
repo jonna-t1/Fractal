@@ -6,55 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/jobo/projects/fractal/src/Mandelbrot.h
-vector
--
-functional
--
-window.h
-/home/jobo/projects/fractal/src/window.h
-save_image.h
-/home/jobo/projects/fractal/src/save_image.h
-string
--
-complex
--
-
-/home/jobo/projects/fractal/src/Zoom.h
-opencv2/opencv.hpp
--
-opencv2/video/tracking.hpp
-/home/jobo/projects/fractal/src/opencv2/video/tracking.hpp
-opencv2/imgproc/imgproc.hpp
-/home/jobo/projects/fractal/src/opencv2/imgproc/imgproc.hpp
-opencv2/highgui/highgui.hpp
-/home/jobo/projects/fractal/src/opencv2/highgui/highgui.hpp
-string
--
-
 /home/jobo/projects/fractal/src/main.cpp
-opencv2/video/tracking.hpp
-/home/jobo/projects/fractal/src/opencv2/video/tracking.hpp
-opencv2/imgproc/imgproc.hpp
-/home/jobo/projects/fractal/src/opencv2/imgproc/imgproc.hpp
-opencv2/highgui/highgui.hpp
-/home/jobo/projects/fractal/src/opencv2/highgui/highgui.hpp
 iostream
 -
-stdio.h
+opencv2/core.hpp
 -
-Mandelbrot.h
-/home/jobo/projects/fractal/src/Mandelbrot.h
-Zoom.h
-/home/jobo/projects/fractal/src/Zoom.h
-
-/home/jobo/projects/fractal/src/save_image.h
-vector
+opencv2/imgcodecs.hpp
 -
-window.h
-/home/jobo/projects/fractal/src/window.h
-
-/home/jobo/projects/fractal/src/window.h
 
 /usr/include/opencv4/opencv2/calib3d.hpp
 opencv2/core.hpp
@@ -888,10 +846,6 @@ opencv2/imgcodecs.hpp
 opencv2/videoio.hpp
 /usr/include/opencv4/opencv2/opencv2/videoio.hpp
 
-/usr/include/opencv4/opencv2/highgui/highgui.hpp
-opencv2/highgui.hpp
-/usr/include/opencv4/opencv2/highgui/opencv2/highgui.hpp
-
 /usr/include/opencv4/opencv2/imgcodecs.hpp
 opencv2/core.hpp
 /usr/include/opencv4/opencv2/opencv2/core.hpp
@@ -899,10 +853,6 @@ opencv2/core.hpp
 /usr/include/opencv4/opencv2/imgproc.hpp
 opencv2/core.hpp
 /usr/include/opencv4/opencv2/opencv2/core.hpp
-
-/usr/include/opencv4/opencv2/imgproc/imgproc.hpp
-opencv2/imgproc.hpp
-/usr/include/opencv4/opencv2/imgproc/opencv2/imgproc.hpp
 
 /usr/include/opencv4/opencv2/ml.hpp
 opencv2/core.hpp
