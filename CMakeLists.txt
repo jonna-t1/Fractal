@@ -26,6 +26,6 @@ file(GLOB SOURCES "src/*.cpp")
 add_executable(Mandelbrot ${SOURCES})
 
 #add_executable(opencvTest src/main.cpp src/zoom.cpp)
-target_link_libraries(opencvTest ${OpenCV_LIBS})
+target_link_libraries(Mandelbrot ${OpenCV_LIBS})
 #target_link_libraries(opencvTest ${SDL2_LIBRARIES} SDL2_image)
 #target_link_libraries(opencvTest freeimage)

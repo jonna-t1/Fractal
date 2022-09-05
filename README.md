@@ -1,6 +1,8 @@
 # CPP: A Mandelbrot Generator
 
-A C++ mandelbrot generator with zoom functionality in opencv.
+A C++ mandelbrot generator with zoom functionality in opencv. Left click to zoom in, right click to zoom out.
+
+<img src="img/mandel.png"/>
 
 ## Dependencies for Running Locally
 * cmake >= 2.8

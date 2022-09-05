@@ -111,44 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named opencvTest
+# Target rules for targets named Mandelbrot
 
 # Build rule for target.
-opencvTest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 opencvTest
-.PHONY : opencvTest
+Mandelbrot: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Mandelbrot
+.PHONY : Mandelbrot
 
 # fast build rule for target.
-opencvTest/fast:
-	$(MAKE) -f CMakeFiles/opencvTest.dir/build.make CMakeFiles/opencvTest.dir/build
-.PHONY : opencvTest/fast
-
-src/Mandelbrot.o: src/Mandelbrot.cpp.o
-
-.PHONY : src/Mandelbrot.o
-
-# target to build an object file
-src/Mandelbrot.cpp.o:
-	$(MAKE) -f CMakeFiles/opencvTest.dir/build.make CMakeFiles/opencvTest.dir/src/Mandelbrot.cpp.o
-.PHONY : src/Mandelbrot.cpp.o
-
-src/Mandelbrot.i: src/Mandelbrot.cpp.i
-
-.PHONY : src/Mandelbrot.i
-
-# target to preprocess a source file
-src/Mandelbrot.cpp.i:
-	$(MAKE) -f CMakeFiles/opencvTest.dir/build.make CMakeFiles/opencvTest.dir/src/Mandelbrot.cpp.i
-.PHONY : src/Mandelbrot.cpp.i
-
-src/Mandelbrot.s: src/Mandelbrot.cpp.s
-
-.PHONY : src/Mandelbrot.s
-
-# target to generate assembly for a file
-src/Mandelbrot.cpp.s:
-	$(MAKE) -f CMakeFiles/opencvTest.dir/build.make CMakeFiles/opencvTest.dir/src/Mandelbrot.cpp.s
-.PHONY : src/Mandelbrot.cpp.s
+Mandelbrot/fast:
+	$(MAKE) -f CMakeFiles/Mandelbrot.dir/build.make CMakeFiles/Mandelbrot.dir/build
+.PHONY : Mandelbrot/fast
 
 src/Zoom.o: src/Zoom.cpp.o
 
@@ -156,7 +129,7 @@ src/Zoom.o: src/Zoom.cpp.o
 
 # target to build an object file
 src/Zoom.cpp.o:
-	$(MAKE) -f CMakeFiles/opencvTest.dir/build.make CMakeFiles/opencvTest.dir/src/Zoom.cpp.o
+	$(MAKE) -f CMakeFiles/Mandelbrot.dir/build.make CMakeFiles/Mandelbrot.dir/src/Zoom.cpp.o
 .PHONY : src/Zoom.cpp.o
 
 src/Zoom.i: src/Zoom.cpp.i
@@ -165,7 +138,7 @@ src/Zoom.i: src/Zoom.cpp.i
 
 # target to preprocess a source file
 src/Zoom.cpp.i:
-	$(MAKE) -f CMakeFiles/opencvTest.dir/build.make CMakeFiles/opencvTest.dir/src/Zoom.cpp.i
+	$(MAKE) -f CMakeFiles/Mandelbrot.dir/build.make CMakeFiles/Mandelbrot.dir/src/Zoom.cpp.i
 .PHONY : src/Zoom.cpp.i
 
 src/Zoom.s: src/Zoom.cpp.s
@@ -174,7 +147,7 @@ src/Zoom.s: src/Zoom.cpp.s
 
 # target to generate assembly for a file
 src/Zoom.cpp.s:
-	$(MAKE) -f CMakeFiles/opencvTest.dir/build.make CMakeFiles/opencvTest.dir/src/Zoom.cpp.s
+	$(MAKE) -f CMakeFiles/Mandelbrot.dir/build.make CMakeFiles/Mandelbrot.dir/src/Zoom.cpp.s
 .PHONY : src/Zoom.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -183,7 +156,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/opencvTest.dir/build.make CMakeFiles/opencvTest.dir/src/main.cpp.o
+	$(MAKE) -f CMakeFiles/Mandelbrot.dir/build.make CMakeFiles/Mandelbrot.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -192,7 +165,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/opencvTest.dir/build.make CMakeFiles/opencvTest.dir/src/main.cpp.i
+	$(MAKE) -f CMakeFiles/Mandelbrot.dir/build.make CMakeFiles/Mandelbrot.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -201,7 +174,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/opencvTest.dir/build.make CMakeFiles/opencvTest.dir/src/main.cpp.s
+	$(MAKE) -f CMakeFiles/Mandelbrot.dir/build.make CMakeFiles/Mandelbrot.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 src/mandel.o: src/mandel.cpp.o
@@ -210,7 +183,7 @@ src/mandel.o: src/mandel.cpp.o
 
 # target to build an object file
 src/mandel.cpp.o:
-	$(MAKE) -f CMakeFiles/opencvTest.dir/build.make CMakeFiles/opencvTest.dir/src/mandel.cpp.o
+	$(MAKE) -f CMakeFiles/Mandelbrot.dir/build.make CMakeFiles/Mandelbrot.dir/src/mandel.cpp.o
 .PHONY : src/mandel.cpp.o
 
 src/mandel.i: src/mandel.cpp.i
@@ -219,7 +192,7 @@ src/mandel.i: src/mandel.cpp.i
 
 # target to preprocess a source file
 src/mandel.cpp.i:
-	$(MAKE) -f CMakeFiles/opencvTest.dir/build.make CMakeFiles/opencvTest.dir/src/mandel.cpp.i
+	$(MAKE) -f CMakeFiles/Mandelbrot.dir/build.make CMakeFiles/Mandelbrot.dir/src/mandel.cpp.i
 .PHONY : src/mandel.cpp.i
 
 src/mandel.s: src/mandel.cpp.s
@@ -228,35 +201,8 @@ src/mandel.s: src/mandel.cpp.s
 
 # target to generate assembly for a file
 src/mandel.cpp.s:
-	$(MAKE) -f CMakeFiles/opencvTest.dir/build.make CMakeFiles/opencvTest.dir/src/mandel.cpp.s
+	$(MAKE) -f CMakeFiles/Mandelbrot.dir/build.make CMakeFiles/Mandelbrot.dir/src/mandel.cpp.s
 .PHONY : src/mandel.cpp.s
-
-src/save_image.o: src/save_image.cpp.o
-
-.PHONY : src/save_image.o
-
-# target to build an object file
-src/save_image.cpp.o:
-	$(MAKE) -f CMakeFiles/opencvTest.dir/build.make CMakeFiles/opencvTest.dir/src/save_image.cpp.o
-.PHONY : src/save_image.cpp.o
-
-src/save_image.i: src/save_image.cpp.i
-
-.PHONY : src/save_image.i
-
-# target to preprocess a source file
-src/save_image.cpp.i:
-	$(MAKE) -f CMakeFiles/opencvTest.dir/build.make CMakeFiles/opencvTest.dir/src/save_image.cpp.i
-.PHONY : src/save_image.cpp.i
-
-src/save_image.s: src/save_image.cpp.s
-
-.PHONY : src/save_image.s
-
-# target to generate assembly for a file
-src/save_image.cpp.s:
-	$(MAKE) -f CMakeFiles/opencvTest.dir/build.make CMakeFiles/opencvTest.dir/src/save_image.cpp.s
-.PHONY : src/save_image.cpp.s
 
 # Help Target
 help:
@@ -266,10 +212,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... opencvTest"
-	@echo "... src/Mandelbrot.o"
-	@echo "... src/Mandelbrot.i"
-	@echo "... src/Mandelbrot.s"
+	@echo "... Mandelbrot"
 	@echo "... src/Zoom.o"
 	@echo "... src/Zoom.i"
 	@echo "... src/Zoom.s"
@@ -279,9 +222,6 @@ help:
 	@echo "... src/mandel.o"
 	@echo "... src/mandel.i"
 	@echo "... src/mandel.s"
-	@echo "... src/save_image.o"
-	@echo "... src/save_image.i"
-	@echo "... src/save_image.s"
 .PHONY : help
 
 

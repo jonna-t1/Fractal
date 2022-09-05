@@ -53,7 +53,7 @@ CMAKE_BINARY_DIR = /home/jobo/projects/fractal/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/opencvTest.dir/all
+all: CMakeFiles/Mandelbrot.dir/all
 
 .PHONY : all
 
@@ -63,36 +63,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/opencvTest.dir/clean
+clean: CMakeFiles/Mandelbrot.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/opencvTest.dir
+# Target rules for target CMakeFiles/Mandelbrot.dir
 
 # All Build rule for target.
-CMakeFiles/opencvTest.dir/all:
-	$(MAKE) -f CMakeFiles/opencvTest.dir/build.make CMakeFiles/opencvTest.dir/depend
-	$(MAKE) -f CMakeFiles/opencvTest.dir/build.make CMakeFiles/opencvTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jobo/projects/fractal/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target opencvTest"
-.PHONY : CMakeFiles/opencvTest.dir/all
+CMakeFiles/Mandelbrot.dir/all:
+	$(MAKE) -f CMakeFiles/Mandelbrot.dir/build.make CMakeFiles/Mandelbrot.dir/depend
+	$(MAKE) -f CMakeFiles/Mandelbrot.dir/build.make CMakeFiles/Mandelbrot.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jobo/projects/fractal/build/CMakeFiles --progress-num=1,2,3,4 "Built target Mandelbrot"
+.PHONY : CMakeFiles/Mandelbrot.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/opencvTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jobo/projects/fractal/build/CMakeFiles 6
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/opencvTest.dir/all
+CMakeFiles/Mandelbrot.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jobo/projects/fractal/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Mandelbrot.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jobo/projects/fractal/build/CMakeFiles 0
-.PHONY : CMakeFiles/opencvTest.dir/rule
+.PHONY : CMakeFiles/Mandelbrot.dir/rule
 
 # Convenience name for target.
-opencvTest: CMakeFiles/opencvTest.dir/rule
+Mandelbrot: CMakeFiles/Mandelbrot.dir/rule
 
-.PHONY : opencvTest
+.PHONY : Mandelbrot
 
 # clean rule for target.
-CMakeFiles/opencvTest.dir/clean:
-	$(MAKE) -f CMakeFiles/opencvTest.dir/build.make CMakeFiles/opencvTest.dir/clean
-.PHONY : CMakeFiles/opencvTest.dir/clean
+CMakeFiles/Mandelbrot.dir/clean:
+	$(MAKE) -f CMakeFiles/Mandelbrot.dir/build.make CMakeFiles/Mandelbrot.dir/clean
+.PHONY : CMakeFiles/Mandelbrot.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
