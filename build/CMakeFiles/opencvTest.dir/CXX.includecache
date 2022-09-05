@@ -6,12 +6,22 @@
 
 #IncludeRegexTransform: 
 
-/home/jobo/projects/fractal/src/main.cpp
+/home/jobo/projects/fractal/src/mandel.cpp
+mandel.h
+/home/jobo/projects/fractal/src/mandel.h
+
+/home/jobo/projects/fractal/src/mandel.h
 iostream
 -
 opencv2/core.hpp
 -
 opencv2/imgcodecs.hpp
+-
+opencv2/opencv.hpp
+-
+opencv2/core/types.hpp
+-
+complex
 -
 
 /usr/include/opencv4/opencv2/calib3d.hpp

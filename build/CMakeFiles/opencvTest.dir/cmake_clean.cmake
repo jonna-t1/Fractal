@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/opencvTest.dir/src/Mandelbrot.cpp.o"
   "CMakeFiles/opencvTest.dir/src/Zoom.cpp.o"
   "CMakeFiles/opencvTest.dir/src/main.cpp.o"
+  "CMakeFiles/opencvTest.dir/src/mandel.cpp.o"
   "CMakeFiles/opencvTest.dir/src/save_image.cpp.o"
   "opencvTest"
   "opencvTest.pdb"

@@ -204,6 +204,33 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/opencvTest.dir/build.make CMakeFiles/opencvTest.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/mandel.o: src/mandel.cpp.o
+
+.PHONY : src/mandel.o
+
+# target to build an object file
+src/mandel.cpp.o:
+	$(MAKE) -f CMakeFiles/opencvTest.dir/build.make CMakeFiles/opencvTest.dir/src/mandel.cpp.o
+.PHONY : src/mandel.cpp.o
+
+src/mandel.i: src/mandel.cpp.i
+
+.PHONY : src/mandel.i
+
+# target to preprocess a source file
+src/mandel.cpp.i:
+	$(MAKE) -f CMakeFiles/opencvTest.dir/build.make CMakeFiles/opencvTest.dir/src/mandel.cpp.i
+.PHONY : src/mandel.cpp.i
+
+src/mandel.s: src/mandel.cpp.s
+
+.PHONY : src/mandel.s
+
+# target to generate assembly for a file
+src/mandel.cpp.s:
+	$(MAKE) -f CMakeFiles/opencvTest.dir/build.make CMakeFiles/opencvTest.dir/src/mandel.cpp.s
+.PHONY : src/mandel.cpp.s
+
 src/save_image.o: src/save_image.cpp.o
 
 .PHONY : src/save_image.o
@@ -249,6 +276,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/mandel.o"
+	@echo "... src/mandel.i"
+	@echo "... src/mandel.s"
 	@echo "... src/save_image.o"
 	@echo "... src/save_image.i"
 	@echo "... src/save_image.s"
