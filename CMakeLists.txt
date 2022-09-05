@@ -19,12 +19,13 @@ include_directories(include)
 file(GLOB SOURCES "src/*.cpp")
 
 ## free image ##
-find_path(SIFTGPU_INCLUDE_DIR FreeImage.h)
-find_library(SIFTGPU_LIBRARY libfreeimage)
-include_directories(${SIFTGPU_INCLUDE_DIR})
+#find_path(SIFTGPU_INCLUDE_DIR FreeImage.h)
+#find_library(SIFTGPU_LIBRARY libfreeimage)
+#include_directories(${SIFTGPU_INCLUDE_DIR})
 
-add_executable(opencvTest ${SOURCES})
+add_executable(Mandelbrot ${SOURCES})
 
 #add_executable(opencvTest src/main.cpp src/zoom.cpp)
-target_link_libraries(opencvTest ${OpenCV_LIBS}  freeimage)
+target_link_libraries(opencvTest ${OpenCV_LIBS})
 #target_link_libraries(opencvTest ${SDL2_LIBRARIES} SDL2_image)
+#target_link_libraries(opencvTest freeimage)

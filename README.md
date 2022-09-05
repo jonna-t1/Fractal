@@ -1,5 +1,6 @@
 # CPP: A Mandelbrot Generator
 
+A C++ mandelbrot generator with zoom functionality in opencv.
 
 ## Dependencies for Running Locally
 * cmake >= 2.8
@@ -10,7 +11,6 @@
   * Windows: [Click here for installation instructions](http://gnuwin32.sourceforge.net/packages/make.htm)
 * OpenCV >= 4.1
   * The OpenCV 4.1.0 source code can be found [here](https://github.com/opencv/opencv/tree/4.1.0)
-  * FreeImage library `sudo apt-get install libfreeimage3 libfreeimage-dev `
 * gcc/g++ >= 5.4
   * Linux: gcc / g++ is installed by default on most Linux distros
   * Mac: same deal as make - [install Xcode command line tools](https://developer.apple.com/xcode/features/)
@@ -22,7 +22,3 @@
 2. Make a build directory in the top level directory: `mkdir build && cd build`
 3. Compile: `cmake .. && make`
 4. Run it: `./MandlebrotGenerator`.
-
-## Project Tasks
-
-* sudo apt install cmake libsdl2-dev g++
