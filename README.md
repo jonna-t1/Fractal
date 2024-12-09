@@ -21,9 +21,10 @@ A C++ mandelbrot generator with zoom functionality in opencv. Left click to zoom
 ## Basic Build Instructions
 
 1. Clone this repo.
-2. Make a build directory in the top level directory: `mkdir build && cd build`
-3. Compile: `cmake .. && make`
-4. Run it: `./Mandlebrot`.
+2. `sudo apt install libopencv-dev`
+3. Make a build directory in the top level directory: `mkdir build && cd build`
+4. Compile: `cmake .. && make`
+5. Run it: `./Mandlebrot`.
 
 
 ## Rubic
